@@ -14,7 +14,7 @@ from fastapi.openapi.docs import get_swagger_ui_html
 load_dotenv()
 
 # 👇 Definir variables (AQUÍ ESTABA TU ERROR)
-GEMINI_API_KEY= "AIzaSyBdJQQNLgXvZrnr5q_TOJjmdTPq15aJvm0"
+GEMINI_API_KEY= ""
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", GEMINI_API_KEY)  # Usa la variable de entorno o el valor por defecto
 
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent"
