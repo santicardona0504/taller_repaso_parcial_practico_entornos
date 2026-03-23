@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot - Gemini API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <h1>💬 ChatBot con Gemini AI</h1>
+                <p class="subtitle">Powered by FastAPI & Gemini API</p>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message welcome">
+                    <div class="message-content">
+                        <p>¡Hola! Bienvenido al ChatBot. Escribe tu mensaje y presiona Enter o haz clic en enviar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <form id="messageForm">
+                    <input
+                        type="text"
+                        id="messageInput"
+                        class="message-input"
+                        placeholder="Escribe tu mensaje aquí..."
+                        autocomplete="off"
+                    />
+                    <button type="submit" class="send-button" id="sendButton">
+                        📤 Enviar
+                    </button>
+                </form>
+                <div id="errorMessage" class="error-message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
